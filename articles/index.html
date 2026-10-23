@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notes on steel buildings — Johnny Steel</title>
+<meta name="description" content="Written notes on sizing and detailing steel warehouses, workshops, cold stores and sheds for projects in Africa and South America.">
+<link rel="canonical" href="https://johnnysteelco.com/articles/">
+<link rel="stylesheet" href="../assets/style.css?v=5">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-83KK640VPN"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-83KK640VPN',{send_page_view:true});
+(function(){
+  function send(n,p){if(typeof gtag==='function'){gtag('event',n,p||{});}}
+  document.addEventListener('click',function(e){
+    var el=e.target&&e.target.nodeType===1?e.target:null;if(!el)return;
+    var a=el.closest('a');if(!a)return;
+    var h=a.getAttribute('href')||'',t=(a.textContent||'').trim().slice(0,60);
+    if(h.indexOf('mailto:')===0){send('contact_email',{link_url:h,link_text:t});}
+    else if(h.indexOf('whatsapp')>-1||h.indexOf('wa.me')>-1){send('contact_whatsapp',{link_url:h,link_text:t});}
+    else if(h.indexOf('tel:')===0){send('contact_phone',{link_url:h,link_text:t});}
+    else if(a.className&&(' '+a.className+' ').indexOf(' btn ')>-1){send('cta_click',{link_url:h,link_text:t});}
+  },true);
+  document.addEventListener('submit',function(e){
+    var f=e.target;if(!f||f.tagName!=='FORM')return;
+    send('form_submit',{form_id:f.id||'unnamed'});
+  },true);
+  var marks=[25,50,75,100],done={};
+  window.addEventListener('scroll',function(){
+    var d=document.documentElement;
+    var pct=(d.scrollTop+window.innerHeight)/d.scrollHeight*100;
+    for(var i=0;i<marks.length;i++){var m=marks[i];if(pct>=m&&!done[m]){done[m]=1;send('scroll_depth',{percent:m});}}
+  },{passive:true});
+})();
+</script>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Johnny<span>Steel</span></a>
+    <nav class="nav">
+      <a href="../articles/index.html" aria-current="page">Notes</a>
+      <a href="../industries/index.html">Industries</a>
+      <a href="../about.html">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Notes</div>
+    <h1>What I would change before you ask anyone to quote.</h1>
+    <p class="lede">Each note takes one decision that is expensive to revisit, and explains what it actually costs to get wrong. Written for owners and project managers, not for engineers.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="list">
+      <a class="item" href="../articles/crushing-hall-height-set-by-maintenance.html">
+        <div class="meta">MINING &middot; 23 OCTOBER 2026</div>
+        <h3>How tall does a crushing hall actually need to be?</h3>
+        <p>Height is set by the largest part you must lift out of the crusher — not by throughput. Owners who size from tonnage build a hall that stops working the first time a shaft comes out.</p>
+      </a>
+      <a class="item" href="../articles/clear-span-without-internal-columns.html">
+        <div class="meta">STEEL WAREHOUSES &middot; 23 OCTOBER 2026</div>
+        <h3>How wide can a warehouse go without internal columns?</h3>
+        <p>The honest answer is not a number. It is a cost curve, and it turns earlier than most owners expect.</p>
+      </a>
+    </div>
+    <p class="sub" style="margin:28px 0 0">New notes are published regularly. If you want them as they appear, <a href="mailto:joe@johnnysteelco.com?subject=Notes">ask me to add you to the list</a>.</p>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap row">
+    <div>&copy; 2026 Johnny Steel &middot; johnnysteelco.com</div>
+    <div><a href="../index.html">Home</a> &middot; <a href="../industries/index.html">Industries</a> &middot; <a href="../about.html">About</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
