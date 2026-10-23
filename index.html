@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Johnny Steel — Steel buildings for Africa and South America</title>
+<meta name="description" content="Notes on sizing, detailing and building steel warehouses, workshops, cold stores and sheds in Africa and South America — what actually goes wrong, and how to avoid it.">
+<link rel="canonical" href="https://johnnysteelco.com/">
+<link rel="stylesheet" href="assets/style.css?v=5">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Johnny Steel — Steel buildings for Africa and South America">
+<meta property="og:description" content="Notes on sizing, detailing and building steel warehouses, workshops, cold stores and sheds in Africa and South America.">
+<meta property="og:url" content="https://johnnysteelco.com/">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Person",
+ "name":"Johnny",
+ "alternateName":"Johnny Steel",
+ "url":"https://johnnysteelco.com/",
+ "jobTitle":"Steel building adviser",
+ "description":"Advises owners and EPC project managers in Africa and South America on sizing and detailing steel warehouses, workshops, cold stores and material sheds.",
+ "knowsAbout":["steel structure buildings","clear span warehouses","workshop crane bays","cold store construction","material storage sheds","project camps"],
+ "areaServed":["Africa","South America"]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-83KK640VPN"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-83KK640VPN',{send_page_view:true});
+(function(){
+  function send(n,p){if(typeof gtag==='function'){gtag('event',n,p||{});}}
+  document.addEventListener('click',function(e){
+    var el=e.target&&e.target.nodeType===1?e.target:null;if(!el)return;
+    var a=el.closest('a');if(!a)return;
+    var h=a.getAttribute('href')||'',t=(a.textContent||'').trim().slice(0,60);
+    if(h.indexOf('mailto:')===0){send('contact_email',{link_url:h,link_text:t});}
+    else if(h.indexOf('whatsapp')>-1||h.indexOf('wa.me')>-1){send('contact_whatsapp',{link_url:h,link_text:t});}
+    else if(h.indexOf('tel:')===0){send('contact_phone',{link_url:h,link_text:t});}
+    else if(a.className&&(' '+a.className+' ').indexOf(' btn ')>-1){send('cta_click',{link_url:h,link_text:t});}
+  },true);
+  document.addEventListener('submit',function(e){
+    var f=e.target;if(!f||f.tagName!=='FORM')return;
+    send('form_submit',{form_id:f.id||'unnamed'});
+  },true);
+  var marks=[25,50,75,100],done={};
+  window.addEventListener('scroll',function(){
+    var d=document.documentElement;
+    var pct=(d.scrollTop+window.innerHeight)/d.scrollHeight*100;
+    for(var i=0;i<marks.length;i++){var m=marks[i];if(pct>=m&&!done[m]){done[m]=1;send('scroll_depth',{percent:m});}}
+  },{passive:true});
+})();
+</script>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">Johnny<span>Steel</span></a>
+    <nav class="nav">
+      <a href="articles/index.html">Notes</a>
+      <a href="industries/index.html">Industries</a>
+      <a href="about.html">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Steel buildings &middot; Africa &amp; South America</div>
+    <h1>Steel buildings get expensive when they are sized wrong.</h1>
+    <p class="lede">I write about the decisions that decide cost and trouble on a steel warehouse, workshop or cold store — span, column spacing, eave height, crane duty, corrosion. The decisions you make before anything is drawn.</p>
+    <p class="byline">By <b>Johnny</b> &middot; steel buildings for Africa and South America &middot; based in China<br>
+    Five steel buildings delivered to date: 9,800 m&sup2; and 3,200 m&sup2; in Brazil; 2,100 m&sup2;, 2,700 m&sup2; and 2,000 m&sup2; in Burkina Faso.</p>
+
+    <div class="stats">
+      <div><span class="n">5</span><span class="k">steel buildings delivered</span></div>
+      <div><span class="n">19,800<small> m&sup2;</small></span><span class="k">total floor area built</span></div>
+      <div><span class="n">22<small> yrs</small></span><span class="k">in export trading</span></div>
+      <div><span class="n">4<small> yrs</small></span><span class="k">on steel structures</span></div>
+    </div>
+  </div>
+ </div>
+
+<div class="band">
+  <div class="wrap">
+    <div class="band-grid">
+      <figure>
+        <img src="assets/images/band-base-aerial.jpg" alt="Aerial view of the manufacturing base" width="1200" height="800" loading="lazy">
+        <figcaption><i>P01</i> The manufacturing base — where the frames are made</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/band-hall-interior.jpg" alt="Interior of a completed steel hall" width="1200" height="800" loading="lazy">
+        <figcaption><i>P02</i> A finished hall — span, eave height, clear floor</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/band-crane-bay.jpg" alt="Crane bay in a steel workshop" width="1200" height="800" loading="lazy">
+        <figcaption><i>P03</i> Crane bay — the load that changes the frame</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="seclabel"><i>01</i> Cost</div>
+    <h2>Where the money actually goes</h2>
+    <p class="sub">Most steel building projects do not fail in fabrication. They fail in the first three decisions.</p>
+    <div class="grid three">
+      <div class="cell">
+        <h3>Span and columns</h3>
+        <p>Every metre of clear span you ask for is bought with steel. So is every column you remove. There is a point where the honest answer is “keep a column”, and it is often earlier than expected.</p>
+      </div>
+      <div class="cell">
+        <h3>What the building must carry</h3>
+        <p>A crane, a mezzanine, a silo, a suspended conveyor. Each one changes the frame before the frame exists. Adding them later is not a detail change, it is a new building.</p>
+      </div>
+      <div class="cell">
+        <h3>The environment it sits in</h3>
+        <p>Coastal air, wet processing floors, fertiliser dust, abrasive aggregate. The same shed lasts fifteen years in one place and five in another. This is decided at specification, not at maintenance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="seclabel"><i>02</i> Industries</div>
+    <h2>By industry</h2>
+    <p class="sub">The problems are specific to what you make, not to steel. <a href="industries/index.html">Read the industry notes &rarr;</a></p>
+    <div class="grid three">
+      <div class="cell"><h3>Mining</h3><p>Crushing halls, conveyor galleries, maintenance bays, stockpiles under cover.</p></div>
+      <div class="cell"><h3>Food processing</h3><p>Wet floors, washdown, drains, and what that does to a steel frame over time.</p></div>
+      <div class="cell"><h3>Cold storage</h3><p>Panels, vapour, floor insulation, and the joints nobody wants to detail.</p></div>
+      <div class="cell"><h3>Logistics and warehousing</h3><p>Docks, ramps, truck turning, door counts — the traffic decides the building.</p></div>
+      <div class="cell"><h3>Energy and chemicals</h3><p>Pipe yards, racks, fire separation, and lifting clearances that cannot be faked.</p></div>
+      <div class="cell"><h3>Manufacturing halls</h3><p>Assembly, appliance, machining — the same shed, different service loads.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="seclabel"><i>03</i> Notes</div>
+    <h2>Recent notes</h2>
+    <p class="sub">Written for owners and project managers, not for engineers.</p>
+    <div class="list">
+      <a class="item" href="articles/crushing-hall-height-set-by-maintenance.html">
+        <div class="meta">MINING &middot; 23 OCTOBER 2026</div>
+        <h3>How tall does a crushing hall actually need to be?</h3>
+        <p>The height is set by the largest part you must lift out of the crusher, not by tonnage. It is also the number nobody revisits until a shaft has to come out.</p>
+      </a>
+      <a class="item" href="articles/clear-span-without-internal-columns.html">
+        <div class="meta">STEEL WAREHOUSES &middot; 23 OCTOBER 2026</div>
+        <h3>How wide can a warehouse go without internal columns?</h3>
+        <p>The honest answer is not a number. It is a cost curve, and it turns earlier than most owners expect.</p>
+      </a>
+    </div>
+    <p class="sub" style="margin:24px 0 0"><a href="articles/index.html">All notes &rarr;</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="seclabel"><i>04</i> Who you are talking to</div>
+    <div class="person">
+      <div class="person-photo">
+        <img src="assets/images/portrait-johnny-joe.jpg" alt="Johnny, steel building adviser" width="502" height="502" loading="lazy">
+      </div>
+      <div class="person-body">
+        <h2>Johnny — one engineer, one contact, drawing to container</h2>
+        <p>I am the export engineer on the China side of the steel structure business, based at Hebei Hongji Shunda Steel Structure Engineering Co., Ltd. — a Chinese fabricator that has been building since 2000, working from a 125,000 m&sup2; production base with six workshops and four 150 t overhead cranes.</p>
+        <p>I look after Africa and South America. Practically that means reading a production requirement, having it engineered properly, and following it to the container that arrives on site. ISO 9001 quality management system.</p>
+        <div class="contact-list">
+          <div><span class="k">WhatsApp / WeChat / Tel</span><span class="v"><a href="https://api.whatsapp.com/send?phone=8613363879800">+86 133 6387 9800</a></span></div>
+          <div><span class="k">E-mail</span><span class="v"><a href="mailto:joe@johnnysteelco.com">joe@johnnysteelco.com</a><br><a href="mailto:warehouse@hongjishunda.com">warehouse@hongjishunda.com</a><br><a href="mailto:johnny@hjsdwarehouse.cn">johnny@hjsdwarehouse.cn</a></span></div>
+          <div><span class="k">Company</span><span class="v">Hebei Hongji Shunda Steel Structure Engineering Co., Ltd.<br>&#27827;&#21271;&#23439;&#22522;&#33308;&#36798;&#38050;&#32467;&#26500;&#24037;&#31243;&#32929;&#20221;&#26377;&#38480;&#20844;&#21496;</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta" id="contact">
+  <div class="wrap">
+    <h2>Have a project you are trying to size?</h2>
+    <p>Send me the span, length, eave height and what the building has to carry. I will tell you what I would change before you ask anyone to quote. No charge for the first look.</p>
+    <div class="btn-row">
+      <a class="btn btn-solid" href="https://api.whatsapp.com/send?phone=8613363879800&amp;text=Hello%20Johnny%2C%20I%20would%20like%20a%20steel%20building%20quotation.%20Country%3A%20%2C%20use%3A%20%2C%20approximate%20size%3A%20%2C%20timeline%3A%20">WhatsApp me</a>
+      <a class="btn" href="mailto:joe@johnnysteelco.com">joe@johnnysteelco.com</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap row">
+    <div>&copy; 2026 Johnny Steel &middot; johnnysteelco.com</div>
+    <div>Written by Johnny &middot; <a href="about.html">About</a> &middot; <a href="articles/index.html">All notes</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
